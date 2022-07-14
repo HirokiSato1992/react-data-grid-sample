@@ -1,4 +1,4 @@
-type demoDataType = {
+export type demoDataType = {
   id: number;
   avartar: string;
   city: string;
@@ -15,13 +15,9 @@ type demoDataType = {
   sentence: string;
   stars: number;
   followers: number;
-}[]
+}
 
-/**
- * サンプルデータはここから
- * https://github.com/rsuite/rsuite/blob/master/docs/public/data/users.json
- */
-export const demoData: demoDataType = [
+export const demoData: demoDataType[] = [
   {
     "id": 1,
     "avartar": "https://via.placeholder.com/40x40/3498ff/FFFFFF?text=E",
